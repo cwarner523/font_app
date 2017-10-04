@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  display:flex;
 }
 
 .App-logo {
@@ -25,4 +26,113 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.fonts-wrapper {
+  width:60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:3%;
+}
+
+.text-editors {
+  width:23%;
+  margin-left:85px;
+  margin-right:85px;
+}
+
+.text-edit {
+  padding: 5px 12px;
+  border: 1px solid #D9D8D6;
+  background: white;
+  margin: 5px;
+  font-size: 12px;
+}
+
+.text-edit span {
+  font-size: 14px;
+}
+
+.text-edit:hover {
+  background:#D9D8D6;
+}
+
+.color-wrapper {
+  margin-top: 20px;
+}
+
+a{
+  width:22%;
+  margin:0 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 2.5em;
+}
+
+a:hover {
+  background: #EDEDEA;
+}
+
+.font-name {
+  width:100%;
+  overflow: scroll;
+}
+
+h1 {
+  font-family: Droid Serif;
+  font-size: 66px;
+  letter-spacing: 0.03em;
+  margin-top:150px;
+  margin-bottom:-20px;
+}
+
+h3 {
+  font-family: Nixie One;
+  font-size:22px;
+  letter-spacing: 0.03em;
+}
+
+h4 {
+  font-size:230%;
+  margin-bottom:-22px;
+  word-wrap: break-word;
+}
+
+p{
+  margin-bottom:40px;
+  font-family: Baskerville;
+  font-size:18px;
+  color:#9FA0A6;
+}
+
+.colors {
+  border-radius: 100%;
+  width:22px;
+  height:22px;
+  margin:4px;
+  border:0px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  width:22%;
+  color:black;
+}
+
+.font-editors {
+  width:50%;
+}
+
+.font-editors p {
+  margin-bottom: -1px;
+  padding:5px;
+}
+
+.font-wrapper {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
 }
