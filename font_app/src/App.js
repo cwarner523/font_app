@@ -151,7 +151,7 @@ class App extends Component {
       <div className="App">
 
       <div className="text-editors">
-      <h1>FontEditer</h1>
+      <h1>FontEditor</h1>
       <h3>with google fonts</h3>
         <div className="color-wrapper">
           <button className="colors" style={{background: '#9E0000'}} onClick={this.handleDarkRed.bind(this)}></button>
