@@ -151,38 +151,39 @@ class App extends Component {
       <div className="App">
 
       <div className="text-editors">
-      <h1>FontEditor</h1>
-      <h3>with google fonts</h3>
-        <div className="color-wrapper">
-          <button className="colors" style={{background: '#9E0000'}} onClick={this.handleDarkRed.bind(this)}></button>
-          <button className="colors" style={{background: 'red'}} onClick={this.handleRed.bind(this)}></button>
-          <button className="colors" style={{background: '#F54B1E'}} onClick={this.handleDarkOrange.bind(this)}></button>
-          <button className="colors" style={{background: '#F5852B'}} onClick={this.handleOrange.bind(this)}></button>
-          <button className="colors" style={{background: '#FFCB3C'}} onClick={this.handleLightOrange.bind(this)}></button>
-          <button className="colors" style={{background: 'yellow'}} onClick={this.handleYellow.bind(this)}></button>
-          <button className="colors" style={{background: '#D3D940'}} onClick={this.handleLightGreen.bind(this)}></button>
-          <button className="colors" style={{background: '#3AA034'}} onClick={this.handleGreen.bind(this)}></button>
-          <button className="colors" style={{background: '#50A5D4'}} onClick={this.handleLightBlue.bind(this)}></button>
-          <button className="colors" style={{background: '#4044D4'}} onClick={this.handleBlue.bind(this)}></button>
-          <button className="colors" style={{background: '#3E1F6B'}} onClick={this.handlePurple.bind(this)}></button>
-          <button className="colors" style={{background: 'black'}} onClick={this.handleBlack.bind(this)}></button>
+        <div className="editors-positon">
+          <h1>FontEditor</h1>
+          <h3>with google fonts</h3>
+            <div className="color-wrapper">
+              <button className="colors" style={{background: '#9E0000'}} onClick={this.handleDarkRed.bind(this)}></button>
+              <button className="colors" style={{background: 'red'}} onClick={this.handleRed.bind(this)}></button>
+              <button className="colors" style={{background: '#F54B1E'}} onClick={this.handleDarkOrange.bind(this)}></button>
+              <button className="colors" style={{background: '#F5852B'}} onClick={this.handleOrange.bind(this)}></button>
+              <button className="colors" style={{background: '#FFCB3C'}} onClick={this.handleLightOrange.bind(this)}></button>
+              <button className="colors" style={{background: 'yellow'}} onClick={this.handleYellow.bind(this)}></button>
+              <button className="colors" style={{background: '#D3D940'}} onClick={this.handleLightGreen.bind(this)}></button>
+              <button className="colors" style={{background: '#3AA034'}} onClick={this.handleGreen.bind(this)}></button>
+              <button className="colors" style={{background: '#50A5D4'}} onClick={this.handleLightBlue.bind(this)}></button>
+              <button className="colors" style={{background: '#4044D4'}} onClick={this.handleBlue.bind(this)}></button>
+              <button className="colors" style={{background: '#3E1F6B'}} onClick={this.handlePurple.bind(this)}></button>
+              <button className="colors" style={{background: 'black'}} onClick={this.handleBlack.bind(this)}></button>
+            </div>
+
+            <div className="font-wrapper">
+              <div className="font-editors">
+              <p>Font Size</p>
+                <button className="text-edit" onClick={this.handleSmaller.bind(this)}> - </button>
+                <button className="text-edit" onClick={this.handleNormal.bind(this)}> A<span>A</span> </button>
+                <button className="text-edit" onClick={this.handleBigger.bind(this)}> + </button>
+              </div>
+
+              <div className="font-editors">
+              <p>Letter Spacing</p>
+                <button className="text-edit" onClick={this.handleSpacingSmaller.bind(this)}>A\V </button>
+                <button className="text-edit" onClick={this.handleSpacingBigger.bind(this)}>A  \  V</button>
+              </div>
+            </div>
         </div>
-
-        <div className="font-wrapper">
-          <div className="font-editors">
-          <p>Font Size</p>
-            <button className="text-edit" onClick={this.handleSmaller.bind(this)}> - </button>
-            <button className="text-edit" onClick={this.handleNormal.bind(this)}> A<span>A</span> </button>
-            <button className="text-edit" onClick={this.handleBigger.bind(this)}> + </button>
-          </div>
-
-          <div className="font-editors">
-          <p>Letter Spacing</p>
-            <button className="text-edit" onClick={this.handleSpacingSmaller.bind(this)}>A\V </button>
-            <button className="text-edit" onClick={this.handleSpacingBigger.bind(this)}>A  \  V</button>
-          </div>
-        </div>
-
       </div>
 
         {this.renderFonts()}
