@@ -34,9 +34,10 @@
   flex-wrap: wrap;
   justify-content: center;
   margin-top:3%;
-  background:#F5F5F5;
+  background:#FAFAFA;
   height:800px;
   overflow: scroll;
+  border: 1px solid #BFBFBF;
 }
 
 .text-editors {
